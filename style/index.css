@@ -48,9 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-*{
-	box-sizing: border-box;
-	border: 1px dashed lightgray;	
+*{	
 	max-width: 100%;
 }
 html{
@@ -66,11 +64,11 @@ body{
 	background-blend-mode: multiply;
 }
 .theHead{
-	background-color: lightsteelblue;
-	background-blend-mode: multiply;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: column;
+	flex-wrap: wrap;
 }
 h1{
 	height: 10vh;
@@ -78,10 +76,13 @@ h1{
 	justify-content: center;
 	align-items: center;
 	color:orangered;
-	text-height: 75%;
 }
 h2{
 	color:cadetblue;
+	text-align: center;
+}
+.info{
+	color:peru;
 	text-align: center;
 }
 nav{
@@ -97,4 +98,44 @@ nav a{
 }
 .button{
 	background-color: turquoise;
+}
+.programHyperlinks{
+	color: lightpink;
+	height: 40vh;	
+}
+.projectDisplay{
+	height 60vh;
+	display: flex;
+	color: lightpink;
+	width: 100%;
+	justify-content: space-around;
+}
+.prog{
+	text-decoration:none;
+	border-radius: 25px;
+	color: white;
+	padding: 1%;
+	width: 75%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+.button2{
+	background-color: orangered;
+	border-radius: 25px;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	width:20%;
+	height: 30vh;
+	
+}
+.descriptions{
+	height: 32vh;
+	width: 20%;
+	display: flex;
+	align-items:center;
+		
 }
