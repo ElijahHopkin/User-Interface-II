@@ -1,1 +1,198 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{	
+	box-sizing:border-box;
+	max-width: 100%;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 3rem;
+	font-family: 'Dongle', sans-serif;
+	background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pdmaps-rijks-08-nam_1.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&auto=format&ixlib=js-2.2.1&s=fba1454cb0077adc7d9428487102ef36);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: midnightblue;
+	background-blend-mode: multiply;
+}
+.theHead{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	flex-wrap: wrap;
+}
+.theHead img{
+	border-radius: 600px;
+	max-width:13vh;
+	max-height:13vh;
+}
+h1{
+	height: 15%;
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:orangered;
+}
+h2{
+	color:cadetblue;
+	text-align: center;
+}
+.info{
+	color:peru;
+	text-align: center;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	padding: 1%;
+}
+nav a{
+	text-decoration:none;
+	border-radius: 25px;
+	color: white;
+	padding: 1%;
+}
+.button{
+	background-color: turquoise;
+}
+.panoramic{
+	height 10%;
+	padding: 5%;
+	display: flex;
+	justify-content: center;
+	
+}
+.panoramic img{
+	object-fit: cover;
+	width: 60%;
+
+}
+.programHyperlinks{
+	color: lightpink;	
+}
+.projectDisplay{
+	height 60vh;
+	display: flex;
+	color: lightpink;
+	width: 100%;
+	justify-content: space-around;
+}
+.prog{
+	text-decoration:none;
+	border-radius: 25px;
+	color: white;
+	padding: 1%;
+	width: 75%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+.button2{
+	background-color: orangered;
+	border-radius: 25px;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	width:20%;
+	height: 30vh;
+	
+}
+.descriptions{
+	height: 32vh;
+	width: 20%;
+	display: flex;
+	align-items:center;
+}
+
+@media (max-width: 800px) {
+	nav{
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.button{
+		width: 40%;
+		border-radius:0;
+	}
+	.projectDisplay{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.prog{
+		width:100%;
+		border-radius:0;
+		padding: 0;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-around;
+	}
+	.prog a{
+		width:40%;
+		border-radius: 0;
+		display:flex;
+		justify-content: center;
+	}
+	.descriptions{
+		width: 90%;
+		height: 3%;
+		align-items:center;
+	}
+
+@media (max-width: 500px) {
+	h1{
+		width:50%;
+	}
+}
