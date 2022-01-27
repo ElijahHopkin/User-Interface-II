@@ -49,6 +49,7 @@ table {
 }
 
 *{	
+	box-sizing:border-box;
 	max-width: 100%;
 }
 html{
@@ -70,8 +71,14 @@ body{
 	flex-flow: column;
 	flex-wrap: wrap;
 }
+.theHead img{
+	border-radius: 600px;
+	max-width:13vh;
+	max-height:13vh;
+}
 h1{
-	height: 10vh;
+	height: 15%;
+	width: 25%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -99,9 +106,20 @@ nav a{
 .button{
 	background-color: turquoise;
 }
+.panoramic{
+	height 10%;
+	padding: 5%;
+	display: flex;
+	justify-content: center;
+	
+}
+.panoramic img{
+	object-fit: cover;
+	width: 60%;
+
+}
 .programHyperlinks{
-	color: lightpink;
-	height: 40vh;	
+	color: lightpink;	
 }
 .projectDisplay{
 	height 60vh;
@@ -137,5 +155,48 @@ nav a{
 	width: 20%;
 	display: flex;
 	align-items:center;
-		
+}
+
+@media (max-width: 800px) {
+	*{
+		box-sizing:border-box;
+	border: 1px solid gray;
+	}
+	nav{
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.button{
+		width: 40%;
+		border-radius:0;
+	}
+	.projectDisplay{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.prog{
+		width:100%;
+		border-radius:0;
+		padding: 0;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-around;
+	}
+	.prog a{
+		width:40%;
+		border-radius: 0;
+		display:flex;
+		justify-content: center;
+	}
+	.descriptions{
+		width: 90%;
+		height: 3%;
+		align-items:center;
+	}
+
+@media (max-width: 500px) {
+	h1{
+		width:50%;
+	}
 }
